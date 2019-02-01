@@ -1,0 +1,118 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
+
+/* Its the header picture*/
+#headerpic {
+  opacity: 0.7;
+  height: auto;
+  width: 98%;
+  margin-bottom: 0.1px;
+
+}
+
+/* Its the text thats in the header picture */
+#headertext {
+  position: absolute;
+  margin-top: -18%;
+  margin-left: 35px;
+}
+
+/*Its the header picture and the text */
+.header {
+  height: auto;
+  width: 98%;
+  overflow: hidden;
+}
+ /*Sets the font to all the text that is within the <body> */
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 2em;
+}
+
+/*Sets the margin for both of the sections */
+section, .header {
+  margin: 10px;
+}
+
+/*Makes the allergy info text bold and colors it pink */
+.allergy {
+    font-weight: bold;
+    color: pink;
+}
+/*Its the grid that shows the burgers and their information */
+.burgergrid {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 400px 400px 400px;
+     background-color: black;
+     color: white;
+ }
+
+/*A box*/
+ .box {
+     background-color: #444;
+     color: #fff;
+     border-radius: 5px;
+     padding: 20px;
+     font-size: 150%;
+ }
+
+/*Places the cheese burgers text in the grid*/
+ #CheeseName {
+     grid-column: 1 ;
+     grid-row: 1;
+ }
+
+/*Places the cheeseburgers picture in  the grid*/
+ #Cheesepic {
+   grid-column: 1;
+   grid-row: 2;
+ }
+
+/*Places the cheeseburgers information in the grid*/
+ #Cheeseinfo {
+   grid-column: 1;
+   grid-row: 3;
+ }
+
+/*Color the burger sections backrond black, the text white and makes a pink dotted border*/
+#burgers {
+background-color: black;
+color: white;
+border: 4px dotted pink;
+}
+
+/*Makes a darkcuan dotted border around the customer info section */
+#customer {
+border: 4px dotted darkcyan;
+
+}
+
+/*makes all the text move to the right in from the border*/
+#BurgerSection, .customertext, .container {
+margin-left: 2%;
+}
+
+/*Fixes the cursor so it changes when holding the cursor over the
+"place my order"-button and Payment option*/
+.button, #Payment {
+  cursor: pointer;
+}
+
+/*Fixed the margin for the "place my order"-button */
+.button {
+  margin-top: 5%;
+  margin-left: 15px;
+}
+
+/*Changes the color on the "place my order" button when hover over it with the cursor*/
+button:hover {
+background-color: #ccc;
+}
+
+/*Styles the radio buttons. */
+.container {
+  display: block;
+  margin-bottom: 3px;
+  cursor: pointer;
+  font-size: 25px;
+}

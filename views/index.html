@@ -1,9 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" type="text/css" href="css/style.css">
     <head>
-        <title>DELI-VERY</title>
-    </head>
+        <title>BurgerHeaven</title>
+        <meta charset="utf-8"/>
+        </head>
     <body>
-        <h1>Hello World!!!</h1>
+      <main>
+        <img class="header" id="headerpic" src="https://i.pinimg.com/originals/0c/44/36/0c4436dc30af43e8c51811b7d3394385.jpg" alt="Flower Header">
+          <h1 class="header" id="headertext">Welcome to BurgerHeaven Online </h1>
+
+
+          <section id="burgers">
+            <div id="BurgerSection">
+              <h3 class="burgertext">Select burger</h3>
+              <p class="burgertext">This is where you execute burger selection</p>
+
+              <div class="burgergrid">
+                          <div id=CheeseName>The Cheeseburger</div>
+                          <div id=VeganName>The Vegan Burger</div>
+                          <div id=ChickenName>The Chicken Burger</div>
+
+                <div id=Cheesepic><img src="https://s23991.pcdn.co/wp-content/uploads/2004/06/fearing-burger.jpg" alt="Double CheeseBurger" width="300"></div>
+                <div id="Veganpic"><img src="https://images.immediate.co.uk/volatile/sites/2/2016/06/23930.jpg?quality=45&crop=380px,0px,1201px,800px&resize=620,413" alt="vegan burger"  width="300"></div>
+                <div id=Chickenpic><img src="https://www.recipethis.com/wp-content/uploads/Copycat-KFC-Zinger-Chicken-Burger-In-The-Airfryer.jpg" alt="Chicken" width="300"></div>
+
+                <div id="Cheeseinfo">
+                    <ul>
+                        <li> Contains <span class="allergy">onions</span></li>
+                        <li> Contains <span class="allergy">pickles</span></li>
+                    </ul>
+                </div>
+
+                <div id="Veganinfo">
+                    <ul>
+                        <li> Contains <span class="allergy">onions</span> </li>
+                        <li> Contains <span class="allergy"> soy </span></li>
+                    </ul>
+                </div>
+
+                <div id="Chickeninfo">
+                    <ul>
+                        <li> Contains <span class="allergy">chicken</span></li>
+                        <li> Contains <span class="allergy">egg</span></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </section >
+
+          <section id="customer">
+              <h3 class="customertext">Customer information</h3>
+              <p class="customertext">This is where you provide necessary information </p>
+              <p class="customertext"><b>Delivery information:</b></p>
+              <p class="customertext">
+                <label for="full name">Full name</label><br>
+                <input type="text" id="full name" name="fn" required="required" placeholder="First- and Last name">
+              </p>
+
+              <p class="customertext">
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+              </p>
+              <p class="customertext">
+                <label for="steetname">Street</label><br>
+                <input type="text" id="streetname" name="sn" required="required" placeholder="Street name">
+              </p>
+              <p class="customertext">
+                <label for="housenumber">House</label><br>
+                <input type="number" id="housenumber" name="hn" required="required" placeholder="House number">
+              </p>
+
+              <p class="customertext">
+                  <label for="Payment options">Payment options</label><br>
+                  <select id="Payment" name="po">
+                      <option>Credit card</option>
+                      <option>Swish</option>
+                      <option>Hugs and kisses</option>
+                      <option>Gold</option>
+                      <option>Singing</option>
+                  </select>
+              </p>
+
+              <body class="customertext">
+                <label for= "gender" class="customertext" >Gender</label>
+                <label class="container">Male
+                  <input type="radio"  name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Female
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Non-binary
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Undisclosed
+                  <input type="radio"checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+              </body>
+          </section>
+      </main>
+      <button type="submit" class="button" ><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Tick-green.png" height="20" >Place my order</button align="center">
+      <footer>
+            <p>&copy; 2018 Hypotetical Burges Inc. </p>
+      </footer>
     </body>
 </html>
